@@ -33,6 +33,8 @@
         $resp = $num1 + $num2;
         return($resp);
     }
-    $resposta = somaValor($valor1,$valor2);
-    echo($resposta);
+    $resposta = somaValor($valor1,$valor2 );
+    echo("A resposta de num1 e num2 é $resposta ");
+    $somando = somaValor(30,40) + somaValor(50,60);
+    echo($somando);
 ?>

@@ -11,7 +11,27 @@ DESCONTO IR:
 SALARIO LIQUIDO:
 */
 
-$desc = 0; $valorBruto = 6300; $valorLiquido = 0;
+$desc = 0; $valorBruto = 2500; $valorLiquido = 0; $porc = 0;
+
+//Descobrindo porcentagem de desconto
+function porcIR($valorBruto){
+   if ($valorBruto < 2259.20){
+    return 0;
+    }
+    else if($valorBruto >= 2259.21 && $valorBruto <= 2826.65 ){
+    return 0.075;
+    }
+    else if($valorBruto >= 2826.66 && $valorBruto <= 3751.05){
+    return 0.15;
+    }
+    else if ($valorBruto >= 3751.06 && $valorBruto < 4664.68){
+    return 0.225;
+    }
+    else{
+    return 0.275;
+    } 
+}
+
 
 //Função mostra o desconto do INSS
 function descINSS($valorBruto){
@@ -22,7 +42,8 @@ $mostra = descINSS($valorBruto);
 
 //Função mostra o desconto do IR
 function descIR($valorBruto){
-    $desc = $valorBruto * 0.275;
+    $porc = porcIR($valorBruto);
+    $desc = $valorBruto * $porc;
     return $desc;
 }
 $mostraIR = descIR($valorBruto);

@@ -56,34 +56,36 @@ $mostraIR = descIR($valorBruto);
 
 //Desconto clube:
 
-$esClube = "C"; $valorClube = 0;
+$esClube = "1"; $valorClube = 0;
 
 function desClube($esClube){
-    if($esClube == "A"){
-        $valorClube = 50;
+    switch ($esClube){
+        case 1: 
+            $valorClube = 50;
+        break;
+        case 2: 
+            $valorClube = 30;
+        break;
+        case 3: 
+            $valorClube = 20;
+        default;
     }
-    else if ($esClube == "B"){
-        $valorClube = 30;
-    }
-    else if ($esClube == "C"){
-        $valorClube = 20;
-    }
-    else{
-        return $valorClube;
-    }
+    
     return $valorClube;
+    
+
 
 }
 $mostraClube = desClube($esClube);
 
 //Valor liquido:
 
-$valorLiquido = $valorBruto - $valorClube - ($mostra + $mostraIR);
+$valorLiquido = $valorBruto - ($mostra + $mostraIR + $valorClube );
 
 //Mostrando o final:
 echo("O seu salario bruto é $valorBruto <br />");
 echo("O desconto do INSS é de $mostra <br />");
 echo("O desconto do IR é de $mostraIR <br />");
-echo("O desconto do clube $esClube é $mostraClube <br />");
+echo("O desconto do clube $esClube é R$ $mostraClube <br />");
 echo("O valor liquido é $valorLiquido");
 ?>

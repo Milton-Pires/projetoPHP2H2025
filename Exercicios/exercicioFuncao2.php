@@ -16,7 +16,7 @@ $desc = 0; $valorBruto = 1500; $valorLiquido = 0; $porc = 0;
 
 //Descobrindo porcentagem de desconto
 function porcIR($valorBruto){
-   if ($valorBruto < 2259.20){
+    if ($valorBruto < 2259.20){
         $porc = 0;
         return $porc;
     }

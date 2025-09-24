@@ -1,10 +1,29 @@
 <?php
-
-$vetor = array("Maria", "João" , "Pedro" , "José", "Rafael");
+//Exemplo slide 3 aula 8
+$nome = array("Maria", "João" , "Pedro" , "José", "Rafael");
 
 echo "Os nomes no array são: <br />";
-foreach($vetor as $vetor){
-    echo("<br />" . $vetor);
+foreach($nome as $nomes){
+    echo("<br />" . $nomes);
 }
 
+echo "<br />";
+echo "<br />";
+
+//Exemplo slide 12 aula 8
+$num = array(1, 2, 3, 4 ,5);
+
+foreach($num as $valor){
+    echo "Valor é $valor <br />";
+}
+echo "<br />";
+$num[0] = "um";
+$num[1] = "dois";
+$num[2] = "três";
+$num[3] = "quatro";
+$num[4] = "cinco";
+
+foreach($num as $valor){
+    echo "Valor é $valor <br />";
+}
 ?>

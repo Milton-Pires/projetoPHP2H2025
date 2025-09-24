@@ -58,7 +58,7 @@ echo "O salario de João é " . $salarios['João'] . "<br />";
 echo "O salario de Pedro é " . $salarios['Pedro'] . "<br />";
 echo "O salario de Maria é " . $salarios['Maria'] . "<br />";
 
-
+//Funções predefinidas estão nos slides seguintes da aula 8!
 
 
 ?>

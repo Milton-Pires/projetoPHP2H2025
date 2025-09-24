@@ -37,4 +37,28 @@ $nome["JO"] = "João";
 echo("<pre>");
 var_dump($nome);
 echo("</pre>");
+
+echo("<pre>");
+print_r($nome);
+echo("</pre>");
+
+//Exemplo slide 16 aula 8
+
+$salarios = array("João" => 2000, "Pedro" => 1000, "Maria" => 500);
+
+echo "O salario de João é " . $salarios['João'] . "<br />";
+echo "O salario de Pedro é " . $salarios['Pedro'] . "<br />";
+echo "O salario de Maria é " . $salarios['Maria'] . "<br />";
+
+$salarios['João'] = "Alto";
+$salarios['Pedro'] = "Médio";
+$salarios['Maria'] = "Baixa";
+
+echo "O salario de João é " . $salarios['João'] . "<br />";
+echo "O salario de Pedro é " . $salarios['Pedro'] . "<br />";
+echo "O salario de Maria é " . $salarios['Maria'] . "<br />";
+
+
+
+
 ?>

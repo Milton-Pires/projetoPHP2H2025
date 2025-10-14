@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Formularios</h1>
-    <form action="#" method="get">
+    <form action="cadastrar.php" method="post">
         <label for="nome">Nome:</label> 
         <input type="text" name="nome" id="nome">
         <br><br>    
@@ -17,6 +17,5 @@
         <input type="submit" name="enviar">
         <button type="submit">Cadastrar</button>
     </form>
-
 </body>
 </html>

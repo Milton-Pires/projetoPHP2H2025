@@ -8,28 +8,37 @@
     <link rel="stylesheet" href="css/style.css">    
 </head>
 <body>
-    <h1>Cadastro do usuário</h1>
+   
+    <main class="container">
+         <h1>Cadastro do usuário</h1>
+        <form action="include/cadastrar.php" method="post">
+        <div class="md-3">
+        <label for="primeiroNome">Primeiro Nome</label>
+        <input  class="form-control"type="text" name="primeiroNome" id="primeiroNome" placeholder="Primeiro Nome ..." maxlength ="50" required autofocus>
+        </div>  
 
-    <form action="#" method="post">
+        <div class="md-3">
+        <label for="Sobrenome">Sobrenome</label>
+        <input class="form-control" type="text" name="Sobrenome" id="Sobrenome" placeholder="Sobrenome ..." maxlength ="50" required>
+        </div>
 
-    <label for="primeiroNome">Primeiro Nome</label>
-    <input type="text" name="primeiroNome" id="primeiroNome" placeholder="Primeiro Nome ..." maxlength ="50" required>
-    <br>
+        <div class="md-3">
+        <label for="escolhaPets">Escolha seu pet</label>
+        <select class="form-select" name="escolhaPets" id="escolha pet">
+            <option  value="nenhum">Nenhum</option>
+            <option  value="gato">Gato</option>
+            <option  value="cachorro">Cachorro</option>
+            <option  value="passarinho">Passarinho</option>
+            <option  value="peixe">Peixe</option>
+        </select>
+</div>
+        <div class="md-3">
+        <button  class="btn btn-primary" type="submit">Enviar</button>
+        <button class="btn btn-primary" type="reset">Limpar</button>
+</div>
 
-    <label for="Sobrenome">Sobrenome</label>
-    <input type="text" name="Sobrenome" id="Sobrenome" placeholder="Sobrenome ..." maxlength ="50" required>
-
-    <label for="escolhaPets">Escolha seu pet</label>
-    <select name="escolhaPets" id="escolha pet">
-        <option  value="nenhum">Nenhum</option>
-        <option  value="gato">Gato</option>
-        <option  value="cachorro">Cachorro</option>
-        <option  value="passarinho">Passarinho</option>
-        <option  value="peixe">Peixe</option>
-    </select>
-
-    </form>
-
+        </form>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

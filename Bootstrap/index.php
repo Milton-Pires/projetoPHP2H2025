@@ -24,7 +24,7 @@
 
         <div class="md-3">
         <label for="escolhaPets">Escolha seu pet</label>
-        <select class="form-select" name="escolhaPets" id="escolha pet">
+        <select class="form-select" name="escolhaPets" id="escolhaPets">
             <option  value="nenhum">Nenhum</option>
             <option  value="gato">Gato</option>
             <option  value="cachorro">Cachorro</option>

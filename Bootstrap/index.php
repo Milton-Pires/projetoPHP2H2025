@@ -14,12 +14,12 @@
         <form action="include/cadastrar.php" method="post">
         <div class="md-3">
         <label for="primeiroNome">Primeiro Nome</label>
-        <input  class="form-control"type="text" name="primeiroNome" id="primeiroNome" placeholder="Primeiro Nome ..." maxlength ="50" required autofocus>
+        <input  class="form-control"type="text" name="primeiroNome" id="primeiroNome" placeholder="Primeiro Nome..." maxlength ="50" required autofocus autocomplete="off">
         </div>  
 
         <div class="md-3">
         <label for="Sobrenome">Sobrenome</label>
-        <input class="form-control" type="text" name="Sobrenome" id="Sobrenome" placeholder="Sobrenome ..." maxlength ="50" required>
+        <input class="form-control" type="text" name="Sobrenome" id="Sobrenome" placeholder="Sobrenome..." maxlength ="50" required autocomplete="off">
         </div>
 
         <div class="md-3">
@@ -33,8 +33,9 @@
         </select>
 </div>
         <div class="md-3">
-        <button  class="btn btn-primary" type="submit">Enviar</button>
-        <button class="btn btn-primary" type="reset">Limpar</button>
+        <button  class="btn btn-primary"  id="enviar"type="submit">Enviar</button>
+        <br>
+        <button class="btn btn-primary" id="limpar"type="reset">Limpar</button>
 </div>
 
         </form>

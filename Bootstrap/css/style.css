@@ -31,3 +31,12 @@ body{
     background-color: #a1c2bd;
 
 }
+p{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+}
+.form-check-input .form-check-label{
+    margin-left: 20px;
+}

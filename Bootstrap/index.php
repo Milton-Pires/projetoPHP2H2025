@@ -22,7 +22,7 @@
         <input class="form-control" type="text" name="Sobrenome" id="Sobrenome" placeholder="Sobrenome..." maxlength ="50" required autocomplete="off">
         </div>
 
-        <div class="md-3">
+    <div class="md-3">
         <label for="escolhaPets">Escolha seu pet</label>
         <select class="form-select" name="escolhaPets" id="escolhaPets">
             <option  value="nenhum">Nenhum</option>
@@ -31,12 +31,34 @@
             <option  value="passarinho">Passarinho</option>
             <option  value="peixe">Peixe</option>
         </select>
-</div>
-        <div class="md-3">
+    </div>
+    <div class="form-check">
+    <label for="" class="form-check-label">Escolha seu PET</label> <br>
+    <input type="checkbox" class="form-check-input" name="cachorro"><label for="cachorro" class="form-check-label" >Cachorro</label> <br>
+    <input type="checkbox" class="form-check-input" name="peixe"><label for="Peixe" class="form-check-label">Peixe</label> <br>
+    <input type="checkbox" class="form-check-input" name="gato"><label for="gato" class="form-check-label">Gato</label> <br>
+    <input type="checkbox" class="form-check-input" name="passariho"><label for="passarinho" class="form-check-label">Passarinho</label> <br>   
+    
+    <div class="form-check form-switch">
+        <label for="estado_civil" value="estado_civil">Estado Civil</label> <br>
+        <input  type="radio" > 
+        <label for="Solteiro" value="Solteiro">Solteiro</label> <br>
+        <input  type="radio">
+        <label for="Casado" value="Casado">Casado</label>
+    </div>
+
+    <div class="md-3">
         <button  class="btn btn-primary"  id="enviar"type="submit">Enviar</button>
         <br>
         <button class="btn btn-primary" id="limpar"type="reset">Limpar</button>
-</div>
+    </div>
+
+    <div>
+        <input type="hidden" value="user" value="admin">
+        <input type="hidden" value="nivel" value="2">
+    </div>
+
+
 
         </form>
     </main>

@@ -32,6 +32,16 @@
             <option  value="peixe">Peixe</option>
         </select>
     </div>
+    <div class="md-3"> 
+        <label for="estados">Digite o seu Estado</label>
+        <select class="form-select" name="estados" id="escolhaPets">
+            <option  value="SP">São Paulo</option>
+            <option  value="RJ">Rio de Janeiro</option>
+            <option  value="MG">Minas Gerais</option>
+            <option  value="BA">Bahia</option>
+        </select>
+    </div>
+
     <div class="form-check">
     <label for="" class="form-check-label">Escolha seu PET</label> <br>
     <input type="checkbox" class="form-check-input" name="cachorro"><label for="cachorro" class="form-check-label" >Cachorro</label> <br>
@@ -46,6 +56,17 @@
         <input  type="radio">
         <label for="Casado" value="Casado">Casado</label>
     </div>
+    <div>
+        <h6>
+           Mensagem: 
+        </h6>
+        <br>
+        <textarea name="msg" cols="50" rows="8">
+            
+        </textarea>
+    </div>
+
+    
 
     <div class="md-3">
         <button  class="btn btn-primary"  id="enviar"type="submit">Enviar</button>
@@ -58,7 +79,7 @@
         <input type="hidden" value="nivel" value="2">
     </div>
 
-
+    
 
         </form>
     </main>

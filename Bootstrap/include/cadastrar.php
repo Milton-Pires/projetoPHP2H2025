@@ -17,6 +17,8 @@
         echo "Olá";
     } */
 
+
+    /*
     if(isset($_POST['cachorro'])){
         echo "Você escolheu cachorro! " . $_POST['cachorro'];
         echo "</br>";
@@ -38,4 +40,10 @@
         echo "Você está " . $_POST['estado_civil'];
         echo "</br>";
     }
+    */
+
+    if(isset($_POST['estados'])){
+        echo "Você é do estado de " . $_POST['estados'];
+    }
+
 ?>

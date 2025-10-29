@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="sessoes_bloqueando.php" method="post" name="logar">
+    <form action="sessoes_bloqueando_paginas.php" method="post" name="logar">
         Nome: <br>
         <input type="text" name="nome" autofocus><br>
         Senha: <br>

@@ -14,7 +14,7 @@
     ?>
 </head>
 <body>
-    <b>Funcionario:</b> <?php echo $_SESSION['nome'] ?>, logados com sucesso <br>
+    <b>Funcionario:</b> <?php echo $_SESSION['nome'] ?>, logado com sucesso <br>
     <b>Data de conexão:</b> <?php echo date("d/m/y") ?> <br>
     <b>Hora da conexão:</b> <?php echo date("h:i:s") ?> <br>
 

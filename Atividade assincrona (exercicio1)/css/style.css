@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+}
+
+button{
+    margin-top:10px;
+    width: 100%;
+}
+body{
+    background-image: url(../images/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: inherit;
+}
+
+#limpar{
+    background-color: #8FA31E;
+    border-color: #8fa31e;
+}
+
+.container{
+    border-color: black;
+    border-radius:10px;
+    margin-top: 50px;
+    border-width: 2px;
+    width: 50%;
+    padding: 30px;
+    background-color: #a1c2bd;
+
+}

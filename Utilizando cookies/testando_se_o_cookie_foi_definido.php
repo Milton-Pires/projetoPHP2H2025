@@ -7,8 +7,8 @@
 </head>
 <body>
     <?php
-        if(issset($_COOKIE['usuario'])){
-            echo "Bem-Vindo" . $_COOKIE['usuario'] . "! </br>";
+        if(isset($_COOKIE['usuario'])){
+            echo "Bem-Vindo " . $_COOKIE['Ocupacao'] . "! </br>";
         }
         else{
             echo "Usuário novo!, seja bem-vindo </br>";
